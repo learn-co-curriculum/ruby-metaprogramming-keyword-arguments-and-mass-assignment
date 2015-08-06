@@ -186,8 +186,6 @@ School.new(school_attributes)
 ~~~validation
 
 assert_type(response, School)
-assert_equal(response.name, "The Flatiron School")
-assert_equal(response.location, "11 Broadway, NY, NY")
 
 ~~~
 
