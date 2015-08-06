@@ -158,6 +158,7 @@ Your turn:
 Define a class, School, that initializes with a name and a location. The class should also have `attr_accessor`s for name and location. The initialize method should use keyword arguments for those attributes. Then, instantiate a new instance of the School class using mass assignment. 
 
 ~~~ruby
+
 class School
 # your code here
 end
