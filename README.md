@@ -8,7 +8,7 @@
 
 ## Introduction
 
-At this point, we've very familiar with the fact that methods can be defined to take in arguments. We also know that methods can be defined to take in *multiple* arguments. Let's take a look at an example: 
+At this point, we're very familiar with the fact that methods can be defined to take in arguments. We also know that methods can be defined to take in *multiple* arguments. Let's take a look at an example: 
 
 ```ruby
 def print_name_and_greeting(greeting, name)
