@@ -52,7 +52,7 @@ Oh no! We broke our program! Clearly, we have a need to regulate the passing in 
 
 ## Keyword Arguments 
 
-Keyword arguments are hashes that are used as arguments for methods. Let's walk through it together and refactor our `happy_birthday` method:
+Keyword arguments are a special way of passing arguments into a method. They behave like hashes, pairing a key that functions as the argument name, with it's value. Let's walk through it together and refactor our `happy_birthday` method:
 
 ```ruby
 def happy_birthday(name: "Beyonce", age: 31)
@@ -62,7 +62,7 @@ def happy_birthday(name: "Beyonce", age: 31)
 end
 ```
 
-Here, we've defined our method to take in a hash as an argument. The hash is missing the `{}`, but it's still a hash! (We can't use the `{}` because Ruby will get confused and think you are trying to open a block.) That hash has two key/value pairs, `:name` and `:age`. We've given our hash argument default values of `"Beyonce"` and `31`, but we didn't have to: 
+Here, we've defined our method to take in keyword arguments. Our keyword arguments consist of two key/value pairs, `:name` and `:age`. We've given our keyword arguments default values of `"Beyonce"` and `31`, but we didn't have to: 
 
 ```ruby
 def happy_birthday(name:, current_age:)
@@ -155,7 +155,7 @@ Your turn:
 
 ### Code Challenge II: Mass Assignment
 
-Define a class, School, that initializes with a name and a location. The class should also have `attr_accessor`s for name and location. The initialize method should use keyword arguments for those attributes. Then, instantiate a new instance of the School class using mass assignment. 
+Define a class, `School`, that initializes with a name and a location. The class should also have `attr_accessor`s for `name` and `location`. The `initialize` method should use keyword arguments for those attributes. Then, instantiate a new instance of the `School` class using mass assignment. 
 
 ~~~ruby
 
@@ -165,7 +165,7 @@ end
 
 school_attributes = {name: "The Flatiron School", location: "11 Broadway, NY, NY"}
 
-#instantiate your instance of School here, using mass assignment with the above school_attributes
+#instantiate your instance of `School` here, using mass assignment with the above school_attributes
 
 ~~~solution
 
