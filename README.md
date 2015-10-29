@@ -113,7 +113,7 @@ assert_equal(response, "There are 2 rats on the B train.")
 
 ### Mass Assignment 
 
-Another benefit of using keyword arguments is the ability to "mass assign" attributes to an object. Let's revisit our Person class from an earlier lesson. We'd like to initialize individual people with a name and an age: 
+Another benefit of using keyword arguments is the ability to "mass assign" attributes to an object. Let's revisit our `Person` class from an earlier lesson. We'd like to initialize individual people with a name and an age: 
 
 ```ruby
 class Person
