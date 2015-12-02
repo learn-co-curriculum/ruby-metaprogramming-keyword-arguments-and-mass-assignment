@@ -194,3 +194,5 @@ assert_type(response, School)
 
 %%%
 
+
+<a href='https://learn.co/lessons/keyword-args-mass-assignment' data-visibility='hidden'>View this lesson on Learn.co</a>
