@@ -58,7 +58,7 @@ Oh no! We broke our program! Clearly, we have a need to regulate the passing in 
 Keyword arguments are a special way of passing arguments into a method. They behave like hashes, pairing a key that functions as the argument name, with it's value. Let's walk through it together and refactor our `happy_birthday` method:
 
 ```ruby
-def happy_birthday(name: "Beyonce", age: 31)
+def happy_birthday(name: "Beyonce", current_age: 31)
   puts "Happy Birthday, #{name}"
   current_age += 1
   puts "You are now #{current_age} years old"
@@ -194,5 +194,3 @@ assert_type(response, School)
 
 %%%
 
-
-<a href='https://learn.co/lessons/keyword-args-mass-assignment' data-visibility='hidden'>View this lesson on Learn.co</a>
