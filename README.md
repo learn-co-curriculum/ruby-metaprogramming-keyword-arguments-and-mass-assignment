@@ -194,3 +194,5 @@ assert_type(response, School)
 
 %%%
 
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/keyword-args-mass-assignment' title='Keyword Arguments and Mass Assignment'>Keyword Arguments and Mass Assignment</a> on Learn.co and start learning to code for free.</p>
