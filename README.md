@@ -102,7 +102,7 @@ rat_counter(rat_count: 2, train_line: "the B train")
 
 ~~~solution
 
-def rat_counter(rat_count:, train_line)
+def rat_counter(rat_count:, train_line:)
   "There are #{rat_count} rats on #{train_line}."
 end
 
@@ -195,4 +195,4 @@ assert_type(response, School)
 %%%
 
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/keyword-args-mass-assignment' title='Keyword Arguments and Mass Assignment'>Keyword Arguments and Mass Assignment</a> on Learn.co and start learning to code for free.</p>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/keyword-args-mass-assignment'>Mass Assignment</a> on Learn.co and start learning to code for free.</p>
