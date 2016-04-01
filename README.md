@@ -3,7 +3,7 @@
 ## Objectives
 
 1. Define keyword arguments and learn why they are useful. 
-2. Define mass assignment and learn why is it useful. 
+2. Define mass assignment and learn why it is useful. 
 3. Practice using keyword arguments and mass assignment.
 
 ## Introduction
