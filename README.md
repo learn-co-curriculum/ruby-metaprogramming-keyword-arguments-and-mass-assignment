@@ -147,7 +147,7 @@ Now, we have the added benefit of being able to use something called **mass assi
 ```ruby
 person_attributes = {name: "Sophie", age: 26}
 sophie = Person.new(person_attributes)
-=> #<Person:0x007f9bd5814ae8 @name="sophie", @age=26>
+=> #<Person:0x007f9bd5814ae8 @name="Sophie", @age=26>
 ```
 
 This might not seem particularly useful now, but when we start building web applications, we'll understand more about how necessary this trick really is. For now, just take our word for it. 
@@ -196,3 +196,5 @@ assert_type(response, School)
 
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/keyword-args-mass-assignment'>Mass Assignment</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/keyword-args-mass-assignment'>Mass Assignment</a> on Learn.co and start learning to code for free.</p>
