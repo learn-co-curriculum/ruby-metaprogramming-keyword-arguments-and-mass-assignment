@@ -65,7 +65,7 @@ def happy_birthday(name: "Beyonce", current_age: 31)
 end
 ```
 
-Here, we've defined our method to take in keyword arguments. Our keyword arguments consist of two key/value pairs, `:name` and `:age`. We've given our keyword arguments default values of `"Beyonce"` and `31`, but we didn't have to: 
+Here, we've defined our method to take in keyword arguments. Our keyword arguments consist of two key/value pairs, `:name` and `:current_age`. We've given our keyword arguments default values of `"Beyonce"` and `31`, but we didn't have to: 
 
 ```ruby
 def happy_birthday(name:, current_age:)
