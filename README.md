@@ -88,28 +88,26 @@ Your turn:
 
 ???
 
+# Quiz: Keyword Arguments
+
 ?: Which `rat_counter` method below correctly implements the following?
 
 The method should use keyword arguments to take in a hash as an argument: the keys of the hash are `rat_count` and `train_line`. If called with an argument of `rat_count: 2, train_line: "the B train"`, the method should return: `There are 2 rats on the B train.`
 
-(x)
 
+(x)
 ``` ruby
 def rat_counter(rat_count:, train_line:)
   "There are #{rat_count} rats on the #{train_line}"
 end
 ```
-
 ( )
-
 ``` ruby
 def rat_counter(rat_count, train_line)
   "There are #{rat_count} rats on the #{train_line}"
 end
 ```
-
 ( )
-
 ``` ruby
 def rat_counter(rat_count:, train:)
   "There are #{rat_count} rats on the #{train_line}"
@@ -160,14 +158,14 @@ Your turn:
 
 ???
 
-### Code Challenge II: Mass Assignment
+# Quiz: Mass Assignment
 
-Define a class, `School`, that initializes with a name and a location. The class should also have `attr_accessor`s for `name` and `location`. The `initialize` method should use keyword arguments for those attributes.
+?:Define a class, `School`, that initializes with a name and a location. The class should also have `attr_accessor`s for `name` and `location`. The `initialize` method should use keyword arguments for those attributes.
 
-?: Which snippet below is the correct implementation of `School` according to the above spec?
+Which snippet below is the correct implementation of `School` according to the above spec?
+
 
 ( )
-
 ``` ruby
 class School
   attr_accessor :name, :location
@@ -178,9 +176,7 @@ class School
   end
 end
 ```
-
 (x)
-
 ``` ruby
 class School
   attr_accessor :name, :location
@@ -191,9 +187,7 @@ class School
   end
 end
 ```
-
 ( )
-
 ``` ruby
 class School
   attr_accessor :name, :location
