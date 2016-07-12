@@ -92,7 +92,7 @@ Your turn:
 
 ?: Which `rat_counter` method below correctly implements the following?
 
-The method should use keyword arguments to take in a hash as an argument: the keys of the hash are `rat_count` and `train_line`. If called with an argument of `rat_count: 2, train_line: "the B train"`, the method should return: `There are 2 rats on the B train.`
+The method should use keyword arguments to take in a hash as an argument: the keys of the hash are `rat_count` and `train_line`. If called with an argument of `rat_count: 2, train_line: "B train"`, the method should return: `There are 2 rats on the B train.`
 
 
 (x)
@@ -201,4 +201,4 @@ end
 
 ???
 
-<p class='util--hide'>View <a href='https://learn.co/lessons/keyword-args-mass-assignment'>Mass Assignment</a> on Learn.co and start learning to code for free.</p>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/keyword-args-mass-assignment' title='Mass Assignment'>Mass Assignment</a> on Learn.co and start learning to code for free.</p>
