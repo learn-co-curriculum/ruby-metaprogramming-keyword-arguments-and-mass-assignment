@@ -55,7 +55,7 @@ Oh no! We broke our program! Clearly, we have a need to regulate the passing in 
 
 ## Keyword Arguments
 
-Keyword arguments are a special way of passing arguments into a method. They behave like hashes, pairing a key that functions as the argument name, with it's value. Let's walk through it together and refactor our `happy_birthday` method:
+Keyword arguments are a special way of passing arguments into a method. They behave like hashes, pairing a key that functions as the argument name, with its value. Let's walk through it together and refactor our `happy_birthday` method:
 
 ```ruby
 def happy_birthday(name: "Beyonce", current_age: 31)
@@ -82,7 +82,7 @@ happy_birthday(current_age: 31, name: "Carmelo Anthony")
  "Happy Birthday, Carmelo Anthony"
  "You are now 32 years old"
 ```
-Notice that even though we changed the order of our key/value pairs, our method didn't break! Not only is this method more robust (i.e. more resistant to breakage) than the previous one, it is also more explicit. Anyone looking at it's invocation can tell exactly what kind of data you are passing in.
+Notice that even though we changed the order of our key/value pairs, our method didn't break! Not only is this method more robust (i.e. more resistant to breakage) than the previous one, it is also more explicit. Anyone looking at its invocation can tell exactly what kind of data you are passing in.
 
 Your turn:
 
@@ -202,3 +202,5 @@ end
 ???
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/keyword-args-mass-assignment' title='Mass Assignment'>Mass Assignment</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/keyword-args-mass-assignment'>Mass Assignment</a> on Learn.co and start learning to code for free.</p>
