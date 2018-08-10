@@ -75,7 +75,7 @@ def happy_birthday(name:, current_age:)
 end
 ```
 
-Notice that we can reference `name` and `age` inside our method body, as if they were barewords, *even though they are the keys in our argument hash*. That's how keyword arguments work, they allow you to *name* the arguments that you pass in as keys in a hash. Then, the method body can use the values of those keys, referenced by their name. Let's call our method:
+Notice that we can reference `name` and `current_age` inside our method body, as if they were barewords, *even though they are the keys in our argument hash*. That's how keyword arguments work, they allow you to *name* the arguments that you pass in as keys in a hash. Then, the method body can use the values of those keys, referenced by their name. Let's call our method:
 
 ```ruby
 happy_birthday(current_age: 31, name: "Carmelo Anthony")
