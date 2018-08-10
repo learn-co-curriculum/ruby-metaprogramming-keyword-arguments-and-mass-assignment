@@ -51,7 +51,7 @@ happy_birthday(31, "Beyonce")
   TypeError: no implicit conversion of Fixnum into String
 ```
 
-Oh no! We broke our program! Clearly, we have a need to regulate the passing in of multiple arguments. It would be especially helpful if we could *name* the arguments that we pass in, *when we invoke the method*. Guess what? We can! (Okay, you probably saw that one coming).
+Oh no! We broke our program! Clearly, we have a need to regulate the passing in of multiple arguments. It would be especially helpful if we could *name* the arguments that we pass in, *when we invoke the method*. Guess what? We can! (Okay, you probably saw that one coming.)
 
 ## Keyword Arguments
 
