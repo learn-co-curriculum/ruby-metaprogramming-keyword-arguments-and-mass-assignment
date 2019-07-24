@@ -98,19 +98,19 @@ The method should use keyword arguments to take in a hash as an argument: the ke
 (x)
 ``` ruby
 def rat_counter(rat_count:, train_line:)
-  "There are #{rat_count} rats on the #{train_line}"
+  "There are #{rat_count} rats on the #{train_line}."
 end
 ```
 ( )
 ``` ruby
 def rat_counter(rat_count, train_line)
-  "There are #{rat_count} rats on the #{train_line}"
+  "There are #{rat_count} rats on the #{train_line}."
 end
 ```
 ( )
 ``` ruby
 def rat_counter(rat_count:, train:)
-  "There are #{rat_count} rats on the #{train_line}"
+  "There are #{rat_count} rats on the #{train_line}."
 end
 ```
 
