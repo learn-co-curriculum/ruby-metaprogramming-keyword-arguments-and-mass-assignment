@@ -122,6 +122,38 @@ sophie = Person.new(person_attributes)
 
 This might not seem particularly useful now, but when we start building web applications, we'll understand more about how necessary this trick really is. For now, just take our word for it.
 
+### Hash vs Keyword Arguments
+
+You might be wondering what the difference is between using a Hash as a parameter and keyword arguments: in both cases, when we invoke the method, we pass it a Hash. However, there is a difference between how the method is declared and defined. Also, there's a difference in what happens when all of the expected values aren't present:
+
+```ruby
+class Person
+  attr_accessor :name, :age
+
+  def initialize(name:, age:)
+    @name = name
+    @age = age
+  end
+end
+
+Person.new(name: "Hamtaro")
+=> #ArgumentError missing keyword: age
+```
+
+```ruby
+class Person
+  attr_accessor :name, :age
+
+  def initialize(data)
+    @name = data[:name]
+    @age = data[:age]
+  end
+end
+
+Person.new(name: "Hamtaro")
+=> #<Person:0x00007fb0da9b3768 @name="Hamtaro", @age=nil> 
+```
+
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/keyword-args-mass-assignment' title='Mass Assignment'>Mass Assignment</a> on Learn.co and start learning to code for free.</p>
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/keyword-args-mass-assignment'>Mass Assignment</a> on Learn.co and start learning to code for free.</p>
