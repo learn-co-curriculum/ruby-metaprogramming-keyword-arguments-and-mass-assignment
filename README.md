@@ -124,7 +124,7 @@ This might not seem particularly useful now, but when we start building web appl
 
 ### Hash vs Keyword Arguments
 
-You might be wondering what the difference is between using a Hash as a parameter and keyword arguments: in both cases, when we invoke the method, we pass it a Hash. However, there is a difference between how the method is declared and defined. Also, there's a difference in what happens when all of the expected values aren't present:
+You might be wondering what the difference is between using a Hash as a parameter and keyword arguments: in both cases, when we invoke the method, we pass it a Hash. However, there is a difference between how the method is declared. Also, there's a difference in what happens when all of the expected values aren't present:
 
 ```ruby
 class Person
