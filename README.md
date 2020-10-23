@@ -84,38 +84,6 @@ happy_birthday(current_age: 31, name: "Carmelo Anthony")
 ```
 Notice that even though we changed the order of our key/value pairs, our method didn't break! Not only is this method more robust (i.e. more resistant to breakage) than the previous one, it is also more explicit. Anyone looking at its invocation can tell exactly what kind of data you are passing in.
 
-Your turn:
-
-???
-
-# Quiz: Keyword Arguments
-
-?: Which `rat_counter` method below correctly implements the following?
-
-The method should use keyword arguments to take in a hash as an argument: the keys of the hash are `rat_count` and `train_line`. If called with an argument of `rat_count: 2, train_line: "B train"`, the method should return: `There are 2 rats on the B train.`
-
-
-(x)
-``` ruby
-def rat_counter(rat_count:, train_line:)
-  "There are #{rat_count} rats on the #{train_line}."
-end
-```
-( )
-``` ruby
-def rat_counter(rat_count, train_line)
-  "There are #{rat_count} rats on the #{train_line}."
-end
-```
-( )
-``` ruby
-def rat_counter(rat_count:, train:)
-  "There are #{rat_count} rats on the #{train_line}."
-end
-```
-
-???
-
 ### Mass Assignment
 
 Another benefit of using keyword arguments is the ability to "mass assign" attributes to an object. Let's revisit our `Person` class from an earlier lesson. We'd like to initialize individual people with a name and an age:
@@ -153,54 +121,3 @@ sophie = Person.new(person_attributes)
 ```
 
 This might not seem particularly useful now, but when we start building web applications, we'll understand more about how necessary this trick really is. For now, just take our word for it.
-
-Your turn:
-
-???
-
-# Quiz: Mass Assignment
-
-?:Define a class, `School`, that initializes with a name and a location. The class should also have `attr_accessor`s for `name` and `location`. The `initialize` method should use keyword arguments for those attributes.
-
-Which snippet below is the correct implementation of `School` according to the above spec?
-
-
-( )
-``` ruby
-class School
-  attr_accessor :name, :location
-
-  def initialize(*args)
-    @name = args[0]
-    @location = args[1]
-  end
-end
-```
-(x)
-``` ruby
-class School
-  attr_accessor :name, :location
-
-  def initialize(name:, location:)
-    @name = name
-    @location = location
-  end
-end
-```
-( )
-``` ruby
-class School
-  attr_accessor :name, :location
-
-  def initialize(name, location)
-    @name = name
-    @location = location
-  end
-end
-```
-
-???
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/keyword-args-mass-assignment' title='Mass Assignment'>Mass Assignment</a> on Learn.co and start learning to code for free.</p>
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/keyword-args-mass-assignment'>Mass Assignment</a> on Learn.co and start learning to code for free.</p>
