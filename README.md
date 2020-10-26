@@ -18,7 +18,7 @@ def print_name_and_greeting(greeting, name)
 end
 
 print_name_and_greeting("'sup", "Hillary Clinton")
-"'sup, Hillary Clinton"
+'sup, Hillary Clinton
 => nil
 ```
 
@@ -33,7 +33,7 @@ type of disaster would befall us:
 
 ```ruby
 print_name_and_greeting("Kanye", "hello")
-"Kanye, hello"
+Kanye, hello
 => nil
 ```
 
@@ -101,8 +101,8 @@ keys, referenced by their name. Let's call our method:
 
 ```ruby
 happy_birthday(current_age: 31, name: "Carmelo Anthony")
-"Happy Birthday, Carmelo Anthony"
-"You are now 32 years old"
+Happy Birthday, Carmelo Anthony
+You are now 32 years old
 ```
 
 Notice that even though we changed the order of our key/value pairs, our method
