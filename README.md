@@ -10,7 +10,7 @@
 
 At this point, we're very familiar with the fact that methods can be defined to
 take in arguments. We also know that methods can be defined to take in
-*multiple* arguments. Let's take a look at an example:
+_multiple_ arguments. Let's take a look at an example:
 
 ```ruby
 def print_name_and_greeting(greeting, name)
@@ -18,14 +18,14 @@ def print_name_and_greeting(greeting, name)
 end
 
 print_name_and_greeting("'sup", "Hillary Clinton")
-'sup, Hillary Clinton
-=> nil
+# 'sup, Hillary Clinton
+# => nil
 ```
 
 As it currently stands, whoever uses our method needs to remember exactly what
 order to pass in the arguments. They need to know that the first argument is
 greeting and the second argument is a name. What happens if they forget? What
-happens if another developer who is working on our code base *doesn't* see the
+happens if another developer who is working on our code base _doesn't_ see the
 file where the method is defined, but only sees the method being invoked? Maybe
 it's not clear to them which argument is which––after all, when you invoke
 methods, the arguments aren't labeled or anything. Let's take a look at what
@@ -33,8 +33,8 @@ type of disaster would befall us:
 
 ```ruby
 print_name_and_greeting("Kanye", "hello")
-Kanye, hello
-=> nil
+# Kanye, hello
+# => nil
 ```
 
 That would be a weird way to greet Kanye. Let's take a look at another example,
@@ -47,23 +47,23 @@ def happy_birthday(name, current_age)
   puts "You are now #{current_age} years old"
 end
 
-happy_birthday("Beyonce", 31)
-Happy Birthday, Beyonce
-You are now 32 years old
-=> nil
+# happy_birthday("Beyonce", 31)
+# Happy Birthday, Beyonce
+# You are now 32 years old
+# => nil
 ```
 
 But what happens if we accidentally pass the arguments in in the wrong order?
 
 ```ruby
 happy_birthday(31, "Beyonce")
-Happy Birthday, 31
-TypeError: no implicit conversion of Fixnum into String
+# Happy Birthday, 31
+# TypeError: no implicit conversion of Fixnum into String
 ```
 
 Oh no! We broke our program! Clearly, we have a need to regulate the passing in
-of multiple arguments. It would be especially helpful if we could *name* the
-arguments that we pass in, *when we invoke the method*. Guess what? We can!
+of multiple arguments. It would be especially helpful if we could _name_ the
+arguments that we pass in, _when we invoke the method_. Guess what? We can!
 (Okay, you probably saw that one coming.)
 
 ## Keyword Arguments
@@ -94,15 +94,15 @@ end
 ```
 
 Notice that we can reference `name` and `current_age` inside our method body, as
-if they were barewords, *even though they are the keys in our argument hash*.
-That's how keyword arguments work, they allow you to *name* the arguments that
+if they were barewords, _even though they are the keys in our argument hash_.
+That's how keyword arguments work, they allow you to _name_ the arguments that
 you pass in as keys in a hash. Then, the method body can use the values of those
 keys, referenced by their name. Let's call our method:
 
 ```ruby
 happy_birthday(current_age: 31, name: "Carmelo Anthony")
-Happy Birthday, Carmelo Anthony
-You are now 32 years old
+# Happy Birthday, Carmelo Anthony
+# You are now 32 years old
 ```
 
 Notice that even though we changed the order of our key/value pairs, our method
@@ -151,7 +151,7 @@ in to the method as an argument. Let's take a look:
 ```ruby
 person_attributes = {name: "Sophie", age: 26}
 sophie = Person.new(person_attributes)
-=> #<Person:0x007f9bd5814ae8 @name="Sophie", @age=26>
+# => #<Person:0x007f9bd5814ae8 @name="Sophie", @age=26>
 ```
 
 This might not seem particularly useful now, but when we start building web
